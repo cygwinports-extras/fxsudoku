@@ -1,0 +1,61 @@
+fxsudoku
+------------------------------------------
+The popular game of sudoku written using the FOX Toolkit.
+
+Runtime requirements:
+  cygwin-1.5.23-2
+  fox16-1.6.20-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.23-2
+  binutils-20060817-1
+  cygport-0.2.9-1
+  gcc-core-3.4.4-3
+  gcc-g++-3.4.4-3
+  make-3.81-1
+  reswrap-1.6.4-1
+
+Canonical website:
+  http://fifthplanet.net/
+
+Canonical download:
+  http://fifthplanet.net/files/
+
+-------------------------------------------
+
+Build instructions:
+  unpack fxsudoku-0.5.1-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./fxsudoku-0.5.1-X.cygport all
+
+This will create:
+  /usr/src/fxsudoku-0.5.1-X-src.tar.bz2
+  /usr/src/fxsudoku-0.5.1-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/postinstall/fxsudoku.sh
+  /usr/bin/fxsudoku.exe
+  /usr/share/applications/fxsudoku.desktop
+  /usr/share/doc/Cygwin/fxsudoku-0.5.1.README
+  /usr/share/doc/fxsudoku-0.5.1/COPYING
+  /usr/share/doc/fxsudoku-0.5.1/ChangeLog
+  /usr/share/doc/fxsudoku-0.5.1/INSTALL
+  /usr/share/icons/hicolor/32x32/apps/fxsudoku.png
+  /usr/share/icons/hicolor/48x48/apps/fxsudoku.png
+
+------------------
+
+Port Notes:
+
+----- version 0.5.1-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

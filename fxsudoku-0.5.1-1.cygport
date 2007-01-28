@@ -1,0 +1,24 @@
+DESCRIPTION="FOX Sudoku game"
+HOMEPAGE="http://fifthplanet.net/"
+SRC_URI=http://www.fifthplanet.net/files/${P}.tar.bz2
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cp ${C}/config.cygwin build/
+	export WANT_FOX=1.6
+	./gb || error "compile failed"
+}
+
+src_install() {
+	cd ${B}
+	dobin src/fxsudoku.exe
+
+	make_desktop_entry fxsudoku "FOX Sudoku" fxsudoku "Game;LogicGame"
+
+	insinto /usr/share/icons/hicolor/32x32/apps
+	newins icons/logo.png fxsudoku.png
+
+	insinto /usr/share/icons/hicolor/48x48/apps
+	newins icons/logo_about.png fxsudoku.png
+}
