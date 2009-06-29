@@ -1,4 +1,4 @@
 category: Games
-requires: cygwin fox16
+requires: fox16
 sdesc: "FOX Sudoku game"
 ldesc: "The popular game of sudoku written using the FOX Toolkit."
